@@ -1,0 +1,9 @@
+<li class="list-group-item">
+    <input type="checkbox" name="checkbox" (click)="onTaskDone(id)">
+    <span>
+        {{Task.name}}
+    </span> 
+    <span [ngStyle]="{color: priorityColor(Task.priority)}">
+        {{Task.priority}}
+    </span>
+</li>

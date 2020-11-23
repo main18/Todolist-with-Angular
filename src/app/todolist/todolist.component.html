@@ -1,0 +1,8 @@
+<div class="container">
+    <div class="jumbotron">
+        <app-cockpite></app-cockpite>
+        <ul class="list-group" *ngFor="let task of tasksList;let id = index;">
+            <app-task [id] = "id" [Task]="task"></app-task>
+        </ul>
+    </div>
+</div>

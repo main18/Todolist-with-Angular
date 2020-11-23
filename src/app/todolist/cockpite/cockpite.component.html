@@ -1,0 +1,13 @@
+<form action="" class="form-group">
+    <div class="row">
+        <div class="col-md-6">
+            <label for="task">Enter task here :</label>
+            <input type="text" class="form-control"  (keyup)="onPress($event)" #taskName>
+        </div>
+        <div class="col-md-6">
+            <label for="task">Enter priority here :</label>
+            <input type="number" class="form-control" (keyup)="onPress($event)" #taskPriority>
+        </div>
+    </div>
+    <button class="btn btn-block btn-primary" type="button" (click)="onTaskAdd()">Add task to todolist</button>
+</form>

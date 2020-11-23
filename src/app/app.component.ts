@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'todolist';
+  @ViewChild('button') button : ElementRef;
+  isOpened: boolean = false;
+
+  open() {
+    this.isOpened = !this.isOpened;
+    this.button.nativeElement.style.display = "none";
+  }
 }

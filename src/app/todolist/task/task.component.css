@@ -1,0 +1,21 @@
+li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.red{
+    color:"red";
+}
+
+.orange{
+    color:"orange";
+}
+
+.blue{
+    color:"blue";
+}
+
+.black{
+    color: black;
+}
